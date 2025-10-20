@@ -1,10 +1,20 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Clientes {
     public static void main(String[] args) {
+        ordenaCliente();
         Cliente();
     };
+
+    private static void ordenaCliente(){
+        String Clientes = "carlos, Abreu, Julio, Fernanda, Thiago, julio, Julia";
+    
+        String[] cliente = Clientes.split(",");
+        Arrays.sort(cliente);
+        System.out.println(cliente);
+    }
 
     private static void Cliente(){
 
